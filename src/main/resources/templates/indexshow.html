@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+	<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+	<link rel = "stylesheet" href = "../static/css/me.css">
+	<title>ZQP的个人博客</title>
+</head>
+<body>
+	<div class="ui segment animated bounceIn" id="divHidden" style="width: 100% !important;height: 100% !important; text-align: center !important;display:inline-block;line-height: 500px;">
+		<div class="ui vertical segment" style="top: 25%;">
+			<h1 align="center" style="color: white;font-weight: 700;">欢迎来到我的博客~~</h1>
+			<img src="../static/image/yjl.jpg" th:src="@{/image/yjl.jpg}" alt="" class="ui centered medium circular image" style="width: 250px;height: 250px">
+			<h2 class="ui center aligned header"style="color: white;font-weight: 700;">ZQP</h2>
+
+		</div>
+		<div class="ui vertical aligned segment">
+			<a href="" th:href="@{/index}" class="ui circular icon button"><i class = "chevron down icon"></i></a>
+		</div>
+	</div>
+
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src = "https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src = "https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<script>
+	/*手机端点击出现缩放按钮功能*/
+	$('.menu.toggle').click(function () {
+		$('.m-item').toggleClass('m-mobile-hide');
+	});
+</script>
+
+</body>
+</html>

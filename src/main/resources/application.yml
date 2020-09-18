@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+
+comment.avatar: /image/wolf1.jpg
+
+message.avatar: /image/wolf.jpg
